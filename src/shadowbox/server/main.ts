@@ -187,7 +187,7 @@ async function main() {
   const metricsPublisher: SharedMetricsPublisher = new OutlineSharedMetricsPublisher(
       new RealClock(), serverConfig, accessKeyConfig, metricsReader, toMetricsId, metricsCollector);
   const managerService = new ShadowsocksManagerService(
-      process.env.SB_DEFAULT_SERVER_NAME || 'Outline Server', serverConfig, accessKeyRepository,
+      process.env.SB_DEFAULT_SERVER_NAME || 'JFJ VPN', serverConfig, accessKeyRepository,
       managerMetrics, metricsPublisher);
 
   const certificateFilename = process.env.SB_CERTIFICATE_FILE;
